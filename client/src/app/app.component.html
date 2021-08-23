@@ -1,0 +1,51 @@
+
+<section>
+  <div class="outer-ring">
+    <div class="inner-ring">
+      <form #search="ngForm">
+        <div class="box">
+          <input #searchBox="ngModel" ngModel name="searchBox" id="search-input" placeholder="city">
+          <button class="search-button" (click)="getWeather(searchBox.value)">Search</button>
+        </div>
+      </form>
+      <div class="data" *ngIf="weather">
+        <div class="icon">
+          <img src="{{weather.icons}}" alt="weather-icon">
+        </div>
+        <div class="temperature">
+          <h2>{{weather.temperature}}°</h2>
+        </div>
+        <div class="windSpeed">
+          <table>
+            <tr>
+              <th>Wind speed</th>
+            </tr>
+            <tr>
+              <td>{{weather.windSpeed}} km/h</td>
+            </tr>
+          </table>
+        </div>
+        <div class="windDegree">
+          <table>
+            <tr>
+              <th>Wind degree</th>
+            </tr>
+            <tr>
+              <td>{{weather.windDegree}}°</td>
+            </tr>
+          </table>
+        </div>
+        <div class="humidity">
+          <table>
+            <tr>
+              <th>Humidity</th>
+            </tr>
+            <tr>
+              <td>{{weather.humidity}}%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
