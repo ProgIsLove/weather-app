@@ -1,6 +1,6 @@
 # weather-app
   
-  My application get data from <a>weatherstack.com</a>. This api is free to use!
+  My application get data from [weatherstack](weatherstack.com). This api is free to use!
 
 ## Working with Weather app in your IDE
 
