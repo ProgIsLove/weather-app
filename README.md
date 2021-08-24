@@ -34,5 +34,5 @@ The following items should be installed in your system:
  
  4) Enjoy <3
 
-<img alt="section" src="https://imgur.com/9n22Qtg">
+<img alt="section" src="https://imgur.com/9n22Qtg.png">
 
